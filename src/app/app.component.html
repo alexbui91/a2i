@@ -1,0 +1,384 @@
+<div class="page-container">
+    <!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+    <div class="sidebar-menu">
+        <div class="sidebar-menu-inner">
+            <header class="logo-env">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/pidl.png" height="32" alt="" />
+                    </a>
+                </div>
+                <!-- logo collapse icon -->
+                <div class="sidebar-collapse">
+                    <a href="#" class="sidebar-collapse-icon">
+                        <!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+                        <i class="entypo-menu"></i>
+                    </a>
+                </div>
+                <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+                <div class="sidebar-mobile-menu visible-xs">
+                    <a href="#" class="with-animation">
+                        <!-- add class "with-animation" to support animation -->
+                        <i class="entypo-menu"></i>
+                    </a>
+                </div>
+            </header>
+            <ul id="main-menu" class="main-menu">
+                <li class="active opened active">
+                    <a href="/">
+                        <i class="entypo-gauge"></i>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="root-level">
+                    <a href="/deploy">
+                        <i class="entypo-flow-tree"></i>
+                        <span class="title">Deploy</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="row">
+
+            <!-- Profile Info and Notifications -->
+            <div class="col-md-6 col-sm-8 clearfix">
+
+                <ul class="user-info pull-left pull-none-xsm">
+
+                    <!-- Profile Info -->
+                    <li class="profile-info dropdown">
+                        <!-- add class "pull-right" if you want to place this from right -->
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/img/avatar/2.jpg" alt="" class="img-circle" width="44" /> Alex Bui
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <!-- Reverse Caret -->
+                            <li class="caret"></li>
+
+                            <!-- Profile sub-links -->
+                            <li>
+                                <a href="extra-timeline.html">
+                                    <i class="entypo-user"></i> Edit Profile
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="mailbox.html">
+                                    <i class="entypo-mail"></i> Inbox
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="extra-calendar.html">
+                                    <i class="entypo-calendar"></i> Calendar
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="entypo-clipboard"></i> Tasks
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="user-info pull-left pull-right-xs pull-none-xsm">
+                    <!-- Raw Notifications -->
+                    <li class="notifications dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <i class="entypo-mail"></i>
+                            <span class="badge badge-info">6</span>
+                        </a>
+                    </li>
+                    <li class="notifications dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <i class="entypo-list"></i>
+                            <span class="badge badge-secondary">6</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Raw Links -->
+            <div class="col-md-6 col-sm-4 clearfix hidden-xs">
+
+                <ul class="list-inline links-list pull-right">
+
+                    <!-- Language Selector -->
+                    <li class="dropdown language-selector">
+
+                        Language: &nbsp;
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                            <img src="assets/images/flags/flag-uk.png" width="16" height="16" />
+                        </a>
+
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/flags/flag-kr.png" width="16" height="16" />
+                                    <span>한국어</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <img src="assets/images/flags/flag-uk.png" width="16" height="16" />
+                                    <span>English</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/flags/flag-vn.png" width="16" height="16" />
+                                    <span>Vietnamese</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="sep"></li>
+
+                    <li>
+                        <a href="/logout">
+							Log Out <i class="entypo-logout right"></i>
+						</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr />
+
+
+
+        <div class="row">
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="tile-stats tile-red">
+                    <div class="icon"><i class="entypo-monitor"></i></div>
+                    <div class="num" data-start="0" data-end="83" data-postfix="" data-duration="1500" data-delay="0">0
+                    </div>
+
+                    <h3>Active coral devices</h3>
+                    <p>We have 100 devices</p>
+                </div>
+
+            </div>
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="tile-stats tile-aqua">
+                    <div class="icon"><i class="entypo-flow-tree"></i></div>
+                    <div class="num" data-start="0" data-end="23" data-postfix="" data-duration="1500" data-delay="1200">0</div>
+
+                    <h3>Models</h3>
+                    <p>Jaewon has added a new model</p>
+                </div>
+
+            </div>
+            <div class="col-sm-4 col-xs-6">
+
+                <div class="tile-stats tile-green">
+                    <div class="icon"><i class="entypo-export"></i></div>
+                    <div class="num" data-start="0" data-end="135" data-postfix="" data-duration="1500" data-delay="600">0</div>
+
+                    <h3>Requests</h3>
+                    <p>Alex has sent a new request</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br />
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>
+                                Memory Status
+                                <br />
+                                <small>Device IP: 147.46.116.33</small>
+                            </h4>
+                        </div>
+
+                        <div class="panel-options">
+                            <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+                            <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                            <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+                            <a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="panel-body no-padding" style="height: 400px">
+                        <div [chart]="mchart">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>
+                                CPU Status
+                                <br />
+                                <small>Device IP: 147.46.116.33</small>
+                            </h4>
+                        </div>
+
+                        <div class="panel-options">
+                            <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+                            <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                            <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+                            <a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="panel-body no-padding" style="height: 400px">
+                        <div [chart]="cchart">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">All Coral Devices</div>
+
+                        <div class="panel-options">
+                            <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+                            <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                            <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+                            <a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered table-responsive">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Device IP</th>
+                                <th>Model ID</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>147.46.116.33</td>
+                                <td>Human Pose Estimation</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>147.46.116.35</td>
+                                <td>Human Pose Estimation</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>147.46.116.37</td>
+                                <td>Human Pose Estimation</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>147.16.116.39</td>
+                                <td>Human Pose Estimation</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>147.16.116.41</td>
+                                <td>Human Pose Estimation</td>
+                                <td>Active</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">All models</div>
+
+                        <div class="panel-options">
+                            <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+                            <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                            <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+                            <a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered table-responsive">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Model Name</th>
+                                <th>Description</th>
+                                <th>Last Updated</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>MNIST</td>
+                                <td>Hand Writing Recognition</td>
+                                <td>2020.01.01 12:12:00</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>DMCG</td>
+                                <td>Human Pose Estimation</td>
+                                <td>2020.01.01 12:12:00</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>AlexNet</td>
+                                <td>Voice Recognition</td>
+                                <td>2020.01.01 12:12:00</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>LeNet</td>
+                                <td>Face Emotion Recognition</td>
+                                <td>2020.01.01 12:12:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <!-- <footer class="main">
+            &copy; 2020 <strong>PIDL</strong>
+            <a href="http://kdb.snu.ac.kr" target="_blank"></a>
+        </footer> -->
+    </div>
+</div>

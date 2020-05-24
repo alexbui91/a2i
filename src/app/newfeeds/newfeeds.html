@@ -1,0 +1,19 @@
+<form-paper [paper]="paper" [papers]="papers" (afterEdit)="synchronizeLocalPaper($event[0],$event[1])"></form-paper>
+<!-- ... end News Feed Form  -->
+<div id="newsfeed-items-grid">
+    <div class="ui-block main-noti" *ngIf="!papers.length">
+        <p>There are no contents or some errors may occur</p>
+    </div>
+    <div class="ui-block" *ngFor="let p of papers; let i = index">
+        <paper [info]="p" [showmore]="false" [papers]="papers" (onEdit)="editPaper($event[0], $event[1])"></paper>
+    </div>
+
+</div>
+
+<!-- <button id="load-more-button" class="btn btn-control btn-more" (click)="loadMore()">
+        <svg class="olymp-three-dots-icon">
+            <use xlink:href="assets/svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use>
+        </svg>
+    </button> -->
+
+<!-- ... end Main Content -->
